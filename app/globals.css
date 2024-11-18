@@ -1,21 +1,126 @@
+/* Tailwind base components and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Renk ve Yazı Tipi Değişkenleri */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background-color: #FFFFFF;
+  --primary-text-color: #000000; /* Siyah metin */
+  --accent-color: #FCC502; /* Sarı vurgu rengi */
+  --hover-accent-color: #e0b700; /* Vurgu renginin hover tonu */
+  --secondary-text-color: #707070; /* Gri metin rengi */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Global Stil Ayarları */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Başlıklar */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-text-color);
+  font-weight: 600;
+}
+
+p, label, input, a, button {
+  color: var(--primary-text-color);
+}
+
+/* Linkler */
+a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+/* Düğmeler */
+button {
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: var(--hover-accent-color);
+}
+
+/* Kart Stili */
+.card {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Stilleri */
+input, textarea, select {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 8px;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+/* MapBox Styles */
+.mapboxgl-map {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mapboxgl-canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Footer */
+footer {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--accent-color);
 }
