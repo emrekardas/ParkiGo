@@ -1,14 +1,34 @@
 # ParkiGo 🚗
 
-A modern parking management system built with Next.js and Firebase.
+A modern parking management system built with Next.js and Firebase, offering an intuitive solution for managing parking spaces and reservations.
+
+![Homepage](/readmephotos/homepage-1.jpeg)
+
+## 📱 Application Screenshots
+
+### User Interface
+| Homepage | Parking Map | My Reservations |
+|----------|-------------|-----------------|
+| ![Homepage](/readmephotos/homepage-2.jpeg) | ![Parking Map](/readmephotos/parkingmap.jpeg) | ![My Reservations](/readmephotos/my-reservation.jpeg) |
+
+### Authentication & Settings
+| Login | Register | Profile Settings |
+|-------|----------|------------------|
+| ![Login](/readmephotos/loginpage.jpeg) | ![Register](/readmephotos/registerpage.jpeg) | ![Profile Settings](/readmephotos/profile-settings.jpeg) |
+
+### Admin Dashboard
+![Admin Dashboard](/readmephotos/admin-dashboard.jpeg)
 
 ## 🌟 Features
 
-- Real-time parking spot availability
+- Real-time parking spot availability tracking
 - Interactive map integration with Google Maps
-- User reservation system
-- Dashboard for managing reservations
+- User-friendly reservation system
+- Comprehensive admin dashboard
+- Secure authentication system
+- Profile management
 - Modern and responsive UI with Tailwind CSS
+- Mobile-friendly design
 
 ## 🛠️ Tech Stack
 
@@ -16,7 +36,7 @@ A modern parking management system built with Next.js and Firebase.
 - **UI Library:** React 19.0
 - **Styling:** Tailwind CSS
 - **Database:** Firebase
-- **Maps:** Google Maps API, MapBox API, OpenStreetMap API
+- **Maps:** Google Maps API
 - **Testing:** Jest
 - **Language:** TypeScript
 
@@ -73,6 +93,29 @@ npm run test:watch
 - `/public` - Static assets
 - `/scripts` - Utility scripts including database seeding
 - `/components` - Reusable React components
+- `/readmephotos` - Project screenshots and images
+
+## 🔑 Key Features Explained
+
+1. **Interactive Parking Map**
+   - Real-time visualization of parking spots
+   - Color-coded availability status
+   - Easy spot selection and booking
+
+2. **Reservation Management**
+   - Simple booking process
+   - View and manage current reservations
+   - Booking history
+
+3. **Admin Dashboard**
+   - Comprehensive parking spot management
+   - User management
+   - Analytics and reporting
+
+4. **User Profile**
+   - Personal information management
+   - Reservation history
+   - Account settings
 
 ## 🤝 Contributing
 
@@ -84,7 +127,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👥 Authors
 
-- Emre KARDAS - [emrekrdas]
+- Emre KARDAS - [emrekardas] (https://github.com/emrekardas)
 
 ## 🙏 Acknowledgments
 
