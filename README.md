@@ -67,6 +67,12 @@ Before you begin, ensure you have the following installed:
    npm install react-icons
    npm install react-datepicker @types/react-datepicker
    
+   # Maps and Location
+   npm install mapbox-gl @types/mapbox-gl
+   
+   # Charts and Data Visualization
+   npm install chart.js react-chartjs-2
+   
    # Utility Libraries
    npm install lodash.debounce
    ```
@@ -76,6 +82,7 @@ Before you begin, ensure you have the following installed:
    ```env
    NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+   NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN=your_mapbox_access_token
    ```
 
 5. **Run the development server**
