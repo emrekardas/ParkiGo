@@ -1,10 +1,10 @@
-# ParkiGo 🚗
+# ParkiGo 
 
 A modern parking management system built with Next.js and Firebase, offering an intuitive solution for managing parking spaces and reservations.
 
 ![Homepage](/readmephotos/homepage-1.jpeg)
 
-## 📱 Application Screenshots
+## Application Screenshots
 
 ### User Interface
 | Homepage | Parking Map | My Reservations |
@@ -19,7 +19,7 @@ A modern parking management system built with Next.js and Firebase, offering an 
 ### Admin Dashboard
 ![Admin Dashboard](/readmephotos/admin-dashboard.jpeg)
 
-## 🌟 Features
+## Features
 
 - Real-time parking spot availability tracking
 - Interactive map integration with Google Maps
@@ -30,7 +30,7 @@ A modern parking management system built with Next.js and Firebase, offering an 
 - Modern and responsive UI with Tailwind CSS
 - Mobile-friendly design
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend Framework:** Next.js 15.0
 - **UI Library:** React 19.0
@@ -40,18 +40,18 @@ A modern parking management system built with Next.js and Firebase, offering an 
 - **Testing:** Jest
 - **Language:** TypeScript
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following installed:
 - Node.js (Latest LTS version)
 - npm or yarn
 - Firebase account and project setup
 
-## 🚀 Getting Started
+## Getting Started
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/parkigo.git
+   git clone https://github.com/emrekardas/ParkiGo.git
    cd parkigo
    ```
 
@@ -60,24 +60,35 @@ Before you begin, ensure you have the following installed:
    npm install
    ```
 
-3. **Set up environment variables**
+3. **Install required packages**
+   The project requires some additional packages. Install them using:
+   ```bash
+   # UI Components and Icons
+   npm install react-icons
+   npm install react-datepicker @types/react-datepicker
+   
+   # Utility Libraries
+   npm install lodash.debounce
+   ```
+
+4. **Set up environment variables**
    Create a `.env.local` file in the root directory and add your configuration:
    ```env
    NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
    ```
 
-4. **Run the development server**
+5. **Run the development server**
    ```bash
    npm run dev
    ```
 
-5. **Build for production**
+6. **Build for production**
    ```bash
    npm run build
    ```
 
-## 🧪 Running Tests
+## Running Tests
 
 ```bash
 # Run tests
@@ -87,7 +98,7 @@ npm test
 npm run test:watch
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 - `/app` - Next.js application routes and components
 - `/public` - Static assets
@@ -95,7 +106,7 @@ npm run test:watch
 - `/components` - Reusable React components
 - `/readmephotos` - Project screenshots and images
 
-## 🔑 Key Features Explained
+## Key Features Explained
 
 1. **Interactive Parking Map**
    - Real-time visualization of parking spots
@@ -117,20 +128,20 @@ npm run test:watch
    - Reservation history
    - Account settings
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 👥 Authors
+## Authors
 
 - Emre KARDAS - [emrekardas] (https://github.com/emrekardas)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Thanks to all contributors
 - Inspired by modern parking solutions
-- Built with ❤️ using Next.js and Firebase
+- Built with using Next.js and Firebase
